@@ -2,8 +2,10 @@
   "id": "sky",
   "name": "Sky",
   "displayName": "Sky",
-  "role": "",
+  "role": "ally",
+  "category": "hero",
   "faction": "",
+  "tagline": "Newly featured",
   "description": "",
   "assets": {
     "char": "sky-char.png",
@@ -14,5 +16,7 @@
     "secondary": ""
   },
   "abilities": [],
-  "tags": []
+  "tags": ["hero", "ally", "featured"],
+  "storyOrder": 6,
+  "visible": true
 }
