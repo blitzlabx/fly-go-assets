@@ -2,42 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fly Go Assets</title>
-  <style>
-    :root {
-      --bg: #0a0e17;
-      --text: #e8eef7;
-      --accent: #3b82f6;
-      --muted: #94a3b8;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
-    p { color: var(--muted); max-width: 32rem; line-height: 1.6; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .links { margin-top: 2rem; display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Official Fly Go Asset Hub — characters, branding, and universe documentation." />
+  <meta name="theme-color" content="#0a0e17" />
+  <title>Fly Go — Asset Hub</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="manifest" href="assets/manifest.json" />
 </head>
 <body>
-  <h1>Fly Go Assets</h1>
-  <p>Official asset repository for the Fly Go universe — characters, branding, data, and creative guidelines.</p>
-  <div class="links">
-    <a href="https://github.com/blitzlabx/fly-go-assets">GitHub</a>
-    <a href="docs/UNIVERSE.md">Universe</a>
-    <a href="docs/CHARACTERS.md">Characters</a>
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark" aria-hidden="true">FG</span>
+      <span>Fly Go</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#assets">Assets</a></li>
+        <li><a href="#universe">Universe</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">☰</button>
+  </header>
+
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <a href="#home">Home</a>
+    <a href="#characters">Characters</a>
+    <a href="#assets">Assets</a>
+    <a href="#universe">Universe</a>
+    <a href="https://github.com/blitzlabx/fly-go-assets" rel="noopener">GitHub</a>
   </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-logo-wrap" id="hero-logo">
+        <div class="hero-logo-fallback" aria-hidden="true">FLY GO</div>
+      </div>
+      <h1>Fly Go <span>Asset Hub</span></h1>
+      <p class="hero-lead">Official home for character art, emblems, branding, and universe canon. Built for speed, clarity, and future expansion.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#characters">Meet the roster</a>
+        <a class="btn btn-ghost" href="#assets">Browse assets</a>
+      </div>
+    </section>
+
+    <div class="notice" role="status">
+      <strong>Asset status:</strong> Character art and branding images are not yet committed to this repository.
+      Upload files to the paths listed in Assets below — the hub will display them automatically.
+    </div>
+
+    <section class="section" id="characters">
+      <div class="section-header">
+        <h2>Characters</h2>
+        <p>Heroes and antagonists of the Fly Go universe. Website visibility does not define story introduction order.</p>
+      </div>
+
+      <div class="chip-row" role="group" aria-label="Filter characters">
+        <button type="button" class="chip active" data-filter="all">All</button>
+        <button type="button" class="chip" data-filter="hero">Heroes</button>
+        <button type="button" class="chip" data-filter="antagonist">Antagonists</button>
+      </div>
+
+      <div class="char-grid" id="char-grid" aria-live="polite">
+        <!-- Populated by js/app.js -->
+      </div>
+    </section>
+
+    <section class="section" id="assets">
+      <div class="section-header">
+        <h2>Asset browser</h2>
+        <p>Expected branding and character files. Green = present in repo. Gold = awaiting upload.</p>
+      </div>
+      <div class="asset-list" id="asset-list"></div>
+    </section>
+
+    <section class="section" id="universe">
+      <div class="section-header">
+        <h2>Universe & docs</h2>
+        <p>Canon, story, art direction, and contribution guidelines.</p>
+      </div>
+      <div class="doc-grid">
+        <a class="doc-card" href="docs/UNIVERSE.md">
+          <h3>Universe</h3>
+          <p>World rules, setting, and core pillars.</p>
+        </a>
+        <a class="doc-card" href="docs/STORY.md">
+          <h3>Story</h3>
+          <p>Narrative arcs and key events.</p>
+        </a>
+        <a class="doc-card" href="docs/CHARACTERS.md">
+          <h3>Characters</h3>
+          <p>Roster notes and design references.</p>
+        </a>
+        <a class="doc-card" href="docs/ART-DIRECTION.md">
+          <h3>Art direction</h3>
+          <p>Visual language and color system.</p>
+        </a>
+        <a class="doc-card" href="docs/GAMEPLAY.md">
+          <h3>Gameplay</h3>
+          <p>Systems and player experience.</p>
+        </a>
+        <a class="doc-card" href="docs/ASSET-GUIDELINES.md">
+          <h3>Asset guidelines</h3>
+          <p>Naming, structure, and how to add characters.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Fly Go Assets · <a href="https://github.com/blitzlabx/fly-go-assets">blitzlabx/fly-go-assets</a></p>
+  </footer>
+
+  <!-- Detail panel -->
+  <div class="overlay" id="overlay" hidden></div>
+  <div class="panel" id="detail-panel" role="dialog" aria-modal="true" aria-labelledby="panel-title" hidden>
+    <button type="button" class="panel-close" id="panel-close" aria-label="Close">×</button>
+    <div id="panel-content"></div>
+  </div>
+
+  <script src="js/app.js" defer></script>
 </body>
 </html>
