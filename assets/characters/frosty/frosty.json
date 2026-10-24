@@ -2,8 +2,10 @@
   "id": "frosty",
   "name": "Frosty",
   "displayName": "Frosty",
-  "role": "",
+  "role": "ally",
+  "category": "hero",
   "faction": "",
+  "tagline": "Newly featured",
   "description": "",
   "assets": {
     "char": "frosty-char.png",
@@ -14,5 +16,7 @@
     "secondary": ""
   },
   "abilities": [],
-  "tags": []
+  "tags": ["hero", "ally", "featured"],
+  "storyOrder": 7,
+  "visible": true
 }
