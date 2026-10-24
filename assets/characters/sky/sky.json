@@ -1,0 +1,18 @@
+{
+  "id": "sky",
+  "name": "Sky",
+  "displayName": "Sky",
+  "role": "",
+  "faction": "",
+  "description": "",
+  "assets": {
+    "char": "sky-char.png",
+    "logo": "sky-logo.png"
+  },
+  "colors": {
+    "primary": "",
+    "secondary": ""
+  },
+  "abilities": [],
+  "tags": []
+}
