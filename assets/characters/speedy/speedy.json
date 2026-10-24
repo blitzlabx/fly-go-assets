@@ -1,0 +1,18 @@
+{
+  "id": "speedy",
+  "name": "Speedy",
+  "displayName": "Speedy",
+  "role": "",
+  "faction": "",
+  "description": "",
+  "assets": {
+    "char": "speedy-char.png",
+    "logo": "speedy-logo.png"
+  },
+  "colors": {
+    "primary": "",
+    "secondary": ""
+  },
+  "abilities": [],
+  "tags": []
+}
