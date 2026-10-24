@@ -2,8 +2,10 @@
   "id": "blast",
   "name": "Blast",
   "displayName": "Blast",
-  "role": "",
+  "role": "ally",
+  "category": "hero",
   "faction": "",
+  "tagline": "",
   "description": "",
   "assets": {
     "char": "blast-char.png",
@@ -14,5 +16,7 @@
     "secondary": ""
   },
   "abilities": [],
-  "tags": []
+  "tags": ["hero", "ally"],
+  "storyOrder": 4,
+  "visible": true
 }
