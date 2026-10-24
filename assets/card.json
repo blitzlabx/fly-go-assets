@@ -1,11 +1,16 @@
 {
   "name": "Fly Go",
   "description": "Official assets for the Fly Go universe",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": "https://github.com/blitzlabx/fly-go-assets",
   "brand": {
     "primary": "#3B82F6",
+    "primaryBright": "#60A5FA",
     "secondary": "#0A0E17",
-    "accent": "#60A5FA"
+    "deep": "#060912",
+    "cyan": "#22D3EE",
+    "gold": "#F0C14B",
+    "text": "#E8EEF7",
+    "muted": "#94A3B8"
   }
 }
