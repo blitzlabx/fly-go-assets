@@ -1,14 +1,78 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "updated": "2026-10-24",
   "characters": [
-    { "id": "speedy", "path": "assets/characters/speedy/speedy.json" },
-    { "id": "timy", "path": "assets/characters/timy/timy.json" },
-    { "id": "rokey", "path": "assets/characters/rokey/rokey.json" },
-    { "id": "blast", "path": "assets/characters/blast/blast.json" },
-    { "id": "drift", "path": "assets/characters/drift/drift.json" },
-    { "id": "sky", "path": "assets/characters/sky/sky.json" },
-    { "id": "frosty", "path": "assets/characters/frosty/frosty.json" },
-    { "id": "vex", "path": "assets/characters/vex/vex.json" },
-    { "id": "darkz", "path": "assets/characters/darkz/darkz.json" }
+    {
+      "id": "speedy",
+      "path": "assets/characters/speedy/speedy.json",
+      "order": 1,
+      "featured": true,
+      "category": "hero",
+      "role": "protagonist"
+    },
+    {
+      "id": "timy",
+      "path": "assets/characters/timy/timy.json",
+      "order": 2,
+      "featured": true,
+      "category": "hero",
+      "role": "ally"
+    },
+    {
+      "id": "rokey",
+      "path": "assets/characters/rokey/rokey.json",
+      "order": 3,
+      "featured": true,
+      "category": "hero",
+      "role": "ally"
+    },
+    {
+      "id": "blast",
+      "path": "assets/characters/blast/blast.json",
+      "order": 4,
+      "featured": true,
+      "category": "hero",
+      "role": "ally"
+    },
+    {
+      "id": "drift",
+      "path": "assets/characters/drift/drift.json",
+      "order": 5,
+      "featured": true,
+      "category": "hero",
+      "role": "ally"
+    },
+    {
+      "id": "sky",
+      "path": "assets/characters/sky/sky.json",
+      "order": 6,
+      "featured": true,
+      "category": "hero",
+      "role": "ally"
+    },
+    {
+      "id": "frosty",
+      "path": "assets/characters/frosty/frosty.json",
+      "order": 7,
+      "featured": true,
+      "category": "hero",
+      "role": "ally"
+    },
+    {
+      "id": "vex",
+      "path": "assets/characters/vex/vex.json",
+      "order": 8,
+      "featured": true,
+      "category": "antagonist",
+      "role": "rival"
+    },
+    {
+      "id": "darkz",
+      "path": "assets/characters/darkz/darkz.json",
+      "order": 9,
+      "featured": true,
+      "category": "antagonist",
+      "role": "main_villain"
+    }
   ]
 }
