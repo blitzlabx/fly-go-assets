@@ -2,17 +2,21 @@
   "id": "darkz",
   "name": "Darkz",
   "displayName": "Darkz",
-  "role": "",
+  "role": "main_villain",
+  "category": "antagonist",
   "faction": "",
-  "description": "",
+  "tagline": "Main villain",
+  "description": "The primary antagonistic force in the Fly Go universe.",
   "assets": {
     "char": "darkz-char.png",
     "logo": "darkz-logo.png"
   },
   "colors": {
-    "primary": "",
-    "secondary": ""
+    "primary": "#1E1B4B",
+    "secondary": "#4C1D95"
   },
   "abilities": [],
-  "tags": []
+  "tags": ["antagonist", "main_villain"],
+  "storyOrder": 9,
+  "visible": true
 }
