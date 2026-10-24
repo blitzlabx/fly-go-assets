@@ -1,0 +1,10 @@
+{
+  "assetRoot": "/assets",
+  "cdnBase": null,
+  "imageFormats": ["png", "svg", "webp"],
+  "preferredCharacterArt": "char",
+  "validation": {
+    "requireJsonSchema": true,
+    "maxImageSizeMb": 5
+  }
+}
