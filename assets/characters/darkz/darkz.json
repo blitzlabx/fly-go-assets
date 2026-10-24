@@ -1,0 +1,18 @@
+{
+  "id": "darkz",
+  "name": "Darkz",
+  "displayName": "Darkz",
+  "role": "",
+  "faction": "",
+  "description": "",
+  "assets": {
+    "char": "darkz-char.png",
+    "logo": "darkz-logo.png"
+  },
+  "colors": {
+    "primary": "",
+    "secondary": ""
+  },
+  "abilities": [],
+  "tags": []
+}
