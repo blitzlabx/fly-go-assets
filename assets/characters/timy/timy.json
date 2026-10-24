@@ -2,8 +2,10 @@
   "id": "timy",
   "name": "Timy",
   "displayName": "Timy",
-  "role": "",
+  "role": "ally",
+  "category": "hero",
   "faction": "",
+  "tagline": "",
   "description": "",
   "assets": {
     "char": "timy-char.png",
@@ -14,5 +16,7 @@
     "secondary": ""
   },
   "abilities": [],
-  "tags": []
+  "tags": ["hero", "ally"],
+  "storyOrder": 2,
+  "visible": true
 }
