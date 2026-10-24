@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "characters": [
+    { "id": "speedy", "path": "assets/characters/speedy/speedy.json" },
+    { "id": "timy", "path": "assets/characters/timy/timy.json" },
+    { "id": "rokey", "path": "assets/characters/rokey/rokey.json" },
+    { "id": "blast", "path": "assets/characters/blast/blast.json" },
+    { "id": "drift", "path": "assets/characters/drift/drift.json" },
+    { "id": "sky", "path": "assets/characters/sky/sky.json" },
+    { "id": "frosty", "path": "assets/characters/frosty/frosty.json" },
+    { "id": "vex", "path": "assets/characters/vex/vex.json" },
+    { "id": "darkz", "path": "assets/characters/darkz/darkz.json" }
+  ]
+}
