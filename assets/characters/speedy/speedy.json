@@ -2,17 +2,21 @@
   "id": "speedy",
   "name": "Speedy",
   "displayName": "Speedy",
-  "role": "",
+  "role": "protagonist",
+  "category": "hero",
   "faction": "",
-  "description": "",
+  "tagline": "Main protagonist",
+  "description": "The central hero of the Fly Go universe.",
   "assets": {
     "char": "speedy-char.png",
     "logo": "speedy-logo.png"
   },
   "colors": {
-    "primary": "",
-    "secondary": ""
+    "primary": "#3B82F6",
+    "secondary": "#60A5FA"
   },
   "abilities": [],
-  "tags": []
+  "tags": ["hero", "protagonist"],
+  "storyOrder": 1,
+  "visible": true
 }
