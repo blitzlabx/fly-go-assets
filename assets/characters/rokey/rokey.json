@@ -1,0 +1,18 @@
+{
+  "id": "rokey",
+  "name": "Rokey",
+  "displayName": "Rokey",
+  "role": "",
+  "faction": "",
+  "description": "",
+  "assets": {
+    "char": "rokey-char.png",
+    "logo": "rokey-logo.png"
+  },
+  "colors": {
+    "primary": "",
+    "secondary": ""
+  },
+  "abilities": [],
+  "tags": []
+}
