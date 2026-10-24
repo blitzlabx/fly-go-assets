@@ -2,8 +2,10 @@
   "id": "rokey",
   "name": "Rokey",
   "displayName": "Rokey",
-  "role": "",
+  "role": "ally",
+  "category": "hero",
   "faction": "",
+  "tagline": "",
   "description": "",
   "assets": {
     "char": "rokey-char.png",
@@ -14,5 +16,7 @@
     "secondary": ""
   },
   "abilities": [],
-  "tags": []
+  "tags": ["hero", "ally"],
+  "storyOrder": 3,
+  "visible": true
 }
