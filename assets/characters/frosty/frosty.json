@@ -1,0 +1,18 @@
+{
+  "id": "frosty",
+  "name": "Frosty",
+  "displayName": "Frosty",
+  "role": "",
+  "faction": "",
+  "description": "",
+  "assets": {
+    "char": "frosty-char.png",
+    "logo": "frosty-logo.png"
+  },
+  "colors": {
+    "primary": "",
+    "secondary": ""
+  },
+  "abilities": [],
+  "tags": []
+}
