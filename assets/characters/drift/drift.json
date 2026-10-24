@@ -2,8 +2,10 @@
   "id": "drift",
   "name": "Drift",
   "displayName": "Drift",
-  "role": "",
+  "role": "ally",
+  "category": "hero",
   "faction": "",
+  "tagline": "Newly featured",
   "description": "",
   "assets": {
     "char": "drift-char.png",
@@ -14,5 +16,7 @@
     "secondary": ""
   },
   "abilities": [],
-  "tags": []
+  "tags": ["hero", "ally", "featured"],
+  "storyOrder": 5,
+  "visible": true
 }
