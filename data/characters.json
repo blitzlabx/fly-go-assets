@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "updated": "2026-10-24",
   "characters": [
     {
@@ -19,8 +19,8 @@
       "role": "ally"
     },
     {
-      "id": "rokey",
-      "path": "assets/characters/rokey/rokey.json",
+      "id": "drift",
+      "path": "assets/characters/drift/drift.json",
       "order": 3,
       "featured": true,
       "category": "hero",
@@ -35,8 +35,8 @@
       "role": "ally"
     },
     {
-      "id": "drift",
-      "path": "assets/characters/drift/drift.json",
+      "id": "frosty",
+      "path": "assets/characters/frosty/frosty.json",
       "order": 5,
       "featured": true,
       "category": "hero",
@@ -51,20 +51,20 @@
       "role": "ally"
     },
     {
-      "id": "frosty",
-      "path": "assets/characters/frosty/frosty.json",
+      "id": "starz",
+      "path": "assets/characters/starz/starz.json",
       "order": 7,
       "featured": true,
       "category": "hero",
       "role": "ally"
     },
     {
-      "id": "vex",
-      "path": "assets/characters/vex/vex.json",
+      "id": "paky",
+      "path": "assets/characters/paky/paky.json",
       "order": 8,
       "featured": true,
-      "category": "antagonist",
-      "role": "rival"
+      "category": "hero",
+      "role": "ally"
     },
     {
       "id": "darkz",
@@ -73,6 +73,14 @@
       "featured": true,
       "category": "antagonist",
       "role": "main_villain"
+    },
+    {
+      "id": "vex",
+      "path": "assets/characters/vex/vex.json",
+      "order": 10,
+      "featured": true,
+      "category": "antagonist",
+      "role": "rival"
     }
   ]
 }
