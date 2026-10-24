@@ -2,17 +2,21 @@
   "id": "vex",
   "name": "Vex",
   "displayName": "Vex",
-  "role": "",
+  "role": "rival",
+  "category": "antagonist",
   "faction": "",
-  "description": "",
+  "tagline": "Rival villain",
+  "description": "A formidable rival opposing the heroes of Fly Go.",
   "assets": {
     "char": "vex-char.png",
     "logo": "vex-logo.png"
   },
   "colors": {
-    "primary": "",
-    "secondary": ""
+    "primary": "#7C3AED",
+    "secondary": "#A78BFA"
   },
   "abilities": [],
-  "tags": []
+  "tags": ["antagonist", "rival"],
+  "storyOrder": 8,
+  "visible": true
 }
