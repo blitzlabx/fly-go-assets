@@ -1,0 +1,22 @@
+{
+  "id": "starz",
+  "name": "Starz",
+  "displayName": "Starz",
+  "role": "ally",
+  "category": "hero",
+  "faction": "",
+  "tagline": "",
+  "description": "",
+  "assets": {
+    "char": "starz-char.png",
+    "logo": "starz-logo.png"
+  },
+  "colors": {
+    "primary": "",
+    "secondary": ""
+  },
+  "abilities": [],
+  "tags": ["hero", "ally"],
+  "storyOrder": 7,
+  "visible": true
+}
