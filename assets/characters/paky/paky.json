@@ -1,0 +1,22 @@
+{
+  "id": "paky",
+  "name": "Paky",
+  "displayName": "Paky",
+  "role": "ally",
+  "category": "hero",
+  "faction": "",
+  "tagline": "",
+  "description": "",
+  "assets": {
+    "char": "paky-char.png",
+    "logo": "paky-logo.png"
+  },
+  "colors": {
+    "primary": "",
+    "secondary": ""
+  },
+  "abilities": [],
+  "tags": ["hero", "ally"],
+  "storyOrder": 8,
+  "visible": true
+}
