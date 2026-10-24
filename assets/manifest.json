@@ -1,0 +1,17 @@
+{
+  "name": "Fly Go Assets",
+  "short_name": "FlyGo",
+  "description": "Character and branding assets for Fly Go",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0E17",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "branding/fly-go-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
