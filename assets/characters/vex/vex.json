@@ -1,0 +1,18 @@
+{
+  "id": "vex",
+  "name": "Vex",
+  "displayName": "Vex",
+  "role": "",
+  "faction": "",
+  "description": "",
+  "assets": {
+    "char": "vex-char.png",
+    "logo": "vex-logo.png"
+  },
+  "colors": {
+    "primary": "",
+    "secondary": ""
+  },
+  "abilities": [],
+  "tags": []
+}
