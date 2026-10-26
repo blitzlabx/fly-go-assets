@@ -16,15 +16,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Assemble CSS and JS
+      - name: Decode and write CSS and JS
         run: |
           set -e
           mkdir -p css js
-          cat scripts/_v2/css.* > css/styles.css
-          cat scripts/_v2/js.* > js/app.js
-          wc -c css/styles.css js/app.js
-          head -c 100 css/styles.css; echo
-          head -c 100 js/app.js; echo
+          python3 << 'PY'
+          import base64, zlib
+          from pathlib import Path
+          root = Path('scripts/_v2')
+          def join(prefix):
+              parts = sorted(root.glob(prefix + '_z*'), key=lambda p: p.name)
+              data = ''.join(p.read_text() for p in parts)
+              return zlib.decompress(base64.b64decode(data))
+          css = join('css')
+          js = join('js')
+          Path('css/styles.css').write_bytes(css)
+          Path('js/app.js').write_bytes(js)
+          print('css', len(css), 'js', len(js))
+          print(css[:80])
+          print(js[:80])
+          PY
 
       - name: Commit assembled files
         run: |
@@ -36,4 +47,14 @@ jobs:
             exit 0
           fi
           git commit -m "Assemble Fly Go v2 styles.css and app.js"
+          git push
+
+      - name: Cleanup chunk payloads
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -rf scripts/_v2
+          git add -A scripts/_v2 || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Remove temporary v2 assembly chunks"
           git push
