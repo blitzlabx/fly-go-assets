@@ -1,7 +1,0 @@
-rom { opacity: 0; transform: scale(.7); } to { opacity: 1; transform: none; } }
-@keyframes wrapIn { from { opacity: 0; transform: translateX(var(--from, 0px)) skewX(4deg); } to { opacity: 1; transform: none; } }
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; transition-delay: 0ms !important; }
-  html.js .reveal { opacity: 1; transform: none; }
-}
