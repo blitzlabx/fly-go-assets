@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Roster — Fly Go</title>
+  <meta name="description" content="Every hero and villain of Fly Go, each with a full profile page." />
+  <meta name="theme-color" content="#050814" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Roster — Fly Go" />
+  <meta property="og:description" content="Every hero and villain of Fly Go, each with a full profile page." />
+  <meta property="og:image" content="https://blitzlabx.github.io/fly-go-assets/assets/branding/fly-go-logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="assets/branding/fly-go-icon.png" />
+  <link rel="apple-touch-icon" href="assets/branding/fly-go-icon.png" />
+  <link rel="manifest" href="assets/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Outfit:wght@400;500;600&family=Racing+Sans+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('fg-nav'))document.documentElement.classList.add('arriving')}catch(e){}</script>
+</head>
+<body data-page="roster">
+  <main id="main">
+    <header class="phead container">
+      <span class="pn ghost-num" aria-hidden="true">01</span>
+      <p class="kicker reveal">The roster</p>
+      <h1 class="hx xl pop" data-t="Roster" style="--d:.2s">Roster</h1>
+      <p class="lead reveal" style="--d:.4s">Heroes and villains of the Fly Go universe. Tap a card to open the full profile. Order follows the roster, not story introduction order.</p>
+      <div class="seg reveal" id="seg" role="group" aria-label="Filter characters" style="--d:.5s">
+        <i class="seg-ind" id="seg-ind"></i>
+        <button type="button" class="on" data-filter="all" aria-pressed="true"><span>All</span><b id="n-all">0</b></button>
+        <button type="button" data-filter="hero" aria-pressed="false"><span>Heroes</span><b id="n-hero">0</b></button>
+        <button type="button" data-filter="antagonist" aria-pressed="false"><span>Villains</span><b id="n-antagonist">0</b></button>
+      </div>
+    </header>
+    <div class="container"><div class="cards" id="cards" aria-live="polite"></div></div>
+  </main>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
