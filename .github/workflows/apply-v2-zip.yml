@@ -1,0 +1,56 @@
+name: Apply v2 zip
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/apply-v2-zip.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download and extract v2 zip
+        run: |
+          set -e
+          curl -fsSL -o /tmp/fly-go-v2.zip "https://tmpfiles.org/dl/w9AwVSxROI4Z/fly-go-v2-2.zip"
+          mkdir -p /tmp/v2
+          unzip -o /tmp/fly-go-v2.zip -d /tmp/v2
+          ls -la /tmp/v2 /tmp/v2/css /tmp/v2/js
+          cp /tmp/v2/index.html .
+          cp /tmp/v2/roster.html .
+          cp /tmp/v2/character.html .
+          cp /tmp/v2/emblems.html .
+          cp /tmp/v2/lore.html .
+          mkdir -p css js
+          cp /tmp/v2/css/styles.css css/styles.css
+          cp /tmp/v2/js/app.js js/app.js
+          wc -c css/styles.css js/app.js index.html
+
+      - name: Commit v2 files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html roster.html character.html emblems.html lore.html css/styles.css js/app.js
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Apply Fly Go v2 website (HTML, CSS, JS) from fly-go-v2 zip"
+          git push
+
+      - name: Cleanup temporary workflow and chunks
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f .github/workflows/apply-v2-zip.yml
+          rm -rf scripts/_v2
+          git add -A .github/workflows scripts || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore: remove one-shot apply workflow and temp v2 chunks"
+          git push
