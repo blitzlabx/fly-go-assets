@@ -1,0 +1,39 @@
+name: Assemble v2 CSS/JS
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/_v2/**'
+      - '.github/workflows/assemble-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble CSS and JS
+        run: |
+          set -e
+          mkdir -p css js
+          cat scripts/_v2/css.* > css/styles.css
+          cat scripts/_v2/js.* > js/app.js
+          wc -c css/styles.css js/app.js
+          head -c 100 css/styles.css; echo
+          head -c 100 js/app.js; echo
+
+      - name: Commit assembled files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add css/styles.css js/app.js
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Assemble Fly Go v2 styles.css and app.js"
+          git push
